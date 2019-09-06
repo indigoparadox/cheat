@@ -1,0 +1,2 @@
+Start a service on user login:
+systemctl --user enable servicename

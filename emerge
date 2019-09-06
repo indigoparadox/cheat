@@ -1,0 +1,2 @@
+To emerge from the local dev overlay:
+PORTDIR_OVERLAY="/home/alexanderfb/Documents/IFDYPortage/" emerge -av pkg_name
