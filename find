@@ -1,0 +1,2 @@
+To find all non-ASCII filenames:
+LC_ALL=C find . -name '*[! -~]*'

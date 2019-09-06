@@ -1,0 +1,2 @@
+To convert SRT subtitles to ASS:
+ffmpeg -i input.srt output.ass

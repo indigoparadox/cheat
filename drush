@@ -1,0 +1,5 @@
+To sync a site's staging and development files:
+drush rsync @staging:%files @dev:%files
+
+To sync a site's staging and development database:
+drush sql-sync @staging @dev
