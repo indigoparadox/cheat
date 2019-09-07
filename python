@@ -1,0 +1,4 @@
+To create a .deb from a python setuptools script (requires stdeb):
+
+python setup.py --command-packages=stdeb.command bdist_deb
+
