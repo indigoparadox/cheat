@@ -1,0 +1,17 @@
+
+Find all commits with a certain string:
+
+git log -S 'hello world' --source --all
+
+Update all submodules in the current repo:
+
+git submodule update --recursive
+
+Clone a repo with submodules:
+
+git clone --recurse-submodules
+
+Push a repo with submodules:
+
+git push --recurse-submodules
+
