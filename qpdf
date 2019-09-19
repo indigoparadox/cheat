@@ -1,0 +1,3 @@
+Remove encryption from a PDF:
+
+qpdf --password=<password> --decrypt <input.pdf> <output.pdf>
