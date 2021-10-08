@@ -1,0 +1,2 @@
+To derive a public key from a private key:
+ssh-keygen -y -e -f <private key>
