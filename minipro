@@ -1,0 +1,8 @@
+To test a 74393 logic IC:
+minipro -p 74393 -T
+
+To list all chips/configurations containing the string "AT27C512":
+minipro -L AT27C512
+
+To read the contents of an AT27C512R IC found via -L to a file "eeprom.bin":
+minipro -p "AT27C512R@DIP28" -r eeprom.bin
