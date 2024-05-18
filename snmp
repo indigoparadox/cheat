@@ -1,0 +1,2 @@
+To walk an SNMPv3 host:
+snmpbulkwalk -t1 -v3 -l authPriv -u <user> -a SHA -A "<auth pass>"  -x AES -X "<priv pass>" <target ip>
