@@ -1,0 +1,6 @@
+To mount a loopback image called image.img to the next free loopback device
+with partitions detected:
+losetup -Pf image.img
+
+To detach a loopback image from /dev/loop1:
+losetup -D /dev/loop1

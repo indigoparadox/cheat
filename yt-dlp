@@ -7,3 +7,5 @@ yt-dlp --list-formats "https://www.youtube.com/watch?v=4ofJpOEXrZs"
 To download the best 720p MP4 video, best audio, and combined into an MP4:
 yt-dlp -f "bestvideo[height<=?720][ext=mp4]+bestaudio/best[ext=mp4]/best" --recode mp4 "https://www.youtube.com/watch?v=4ofJpOEXrZs"
 
+To download a video as an MP3 file:
+yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 0 "https://www.youtube.com/watch?v=bb3vJMK6SVk"

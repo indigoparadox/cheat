@@ -1,0 +1,5 @@
+
+List packages installed not from a respository:
+
+apt list --installed | grep installed,local
+
