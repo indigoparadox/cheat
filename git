@@ -15,3 +15,11 @@ Push a repo with submodules:
 
 git push --recurse-submodules
 
+List all files in repo:
+
+git ls-tree --name-only -r HEAD
+
+Filter files out of repo:
+
+git filter-repo --invert-paths --path <file-to-remove>
+
