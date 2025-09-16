@@ -1,2 +1,5 @@
 To convert SRT subtitles to ASS:
 ffmpeg -i input.srt output.ass
+
+To remove the audio track from a file:
+ffmpeg -i input.mp4 -c copy -an output.mp4
