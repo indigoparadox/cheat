@@ -3,3 +3,13 @@ ffmpeg -i input.srt output.ass
 
 To remove the audio track from a file:
 ffmpeg -i input.mp4 -c copy -an output.mp4
+
+To join two videos in sequence:
+ffmpeg -i video1.mp4 -i video2.mp4 -filter_complex "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1" output.mp4.
+
+To grab the last frame from a video:
+ffmpeg -sseof -1 -i video.mp4 -frames:v 1 last_frame.jpg
+
+To create a new video from the first 10 seconds of a video:
+ffmpeg -i video.mp4 -t 10 -c copy output.mp4
+
