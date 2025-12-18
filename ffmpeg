@@ -13,3 +13,10 @@ ffmpeg -sseof -1 -i video.mp4 -frames:v 1 last_frame.jpg
 To create a new video from the first 10 seconds of a video:
 ffmpeg -i video.mp4 -t 10 -c copy output.mp4
 
+To create a new video from 10 seconds of a video, 30 seconds in:
+ffmpeg -i video.mp4 -ss 30 -t 10 -c copy output.mp4
+
+To convert an MP4 to a gif, generating a palette and scaling down to 640x:
+ffmpeg -i video.mp4 -filter_complex "[0:v] palettegen" palette.png
+ffmpeg -i video.mp4 -i palette.png -filter_complex "[0:v] fps=10,scale=640:-1 [new];[new][1:v] paletteuse" output.gif
+
