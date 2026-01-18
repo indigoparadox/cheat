@@ -1,0 +1,3 @@
+To copy a file to a remote server using pre-9.0 SSH:
+
+scp -O example-file remote-server:/example-file
