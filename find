@@ -1,2 +1,5 @@
 To find all non-ASCII filenames:
 LC_ALL=C find . -name '*[! -~]*'
+
+To find all directories not containing a file named "filename":
+find . -type d '!' -exec test -e '{}/filename' \; -print
