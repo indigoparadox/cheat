@@ -1,2 +1,5 @@
 To build a multi-arch image:
 docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64 --tag k8s-registry.interfinitydynamics.info:31320/postfix:3.2.4-r1 .
+
+To cleanup build artifacts, networks, etc:
+docker system prune
