@@ -1,5 +1,7 @@
 
-List packages installed not from a respository:
-
+To list packages installed not from a respository:
 apt list --installed | grep installed,local
+
+To install a package without marking it as manually installed:
+apt-get install --mark-auto
 

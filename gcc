@@ -1,0 +1,4 @@
+To list predefined preprocessor macros:
+
+echo | gcc -dM -E -
+
