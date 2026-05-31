@@ -1,0 +1,3 @@
+To run gprof on "program" with the default data file, gmon.out:
+
+gprof program gmon.out
