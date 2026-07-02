@@ -1,0 +1,3 @@
+To make an ISO called output.iso with volume ID label from dir input.dir:
+
+mkisofs -J -V <label> -o <output.iso> -d <input.dir>
